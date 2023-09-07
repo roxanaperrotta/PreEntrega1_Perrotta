@@ -1,4 +1,5 @@
 
+
 //Definición objeto Promociones
 
 function promociones (producto, bebida, precio)
@@ -10,7 +11,7 @@ function promociones (producto, bebida, precio)
    
 //Definición promociones 
 
-const promocion1 = new promociones("24 empanadas", "gaseosa de 2lts", 7000);
+const promocion1 = new promociones("24 empanadas", "gaseosa de 2lts", 7000, );
 const promocion2 = new promociones("2 pizzas", "gaseosa de 2lts", 7500);
 const promocion3 = new promociones("1 pizza y 12 empanadas", "gaseosa de 2lts", 8000);
 
@@ -19,7 +20,35 @@ const promocion3 = new promociones("1 pizza y 12 empanadas", "gaseosa de 2lts", 
 
 const carrito = []
 
-// Función para saludar e inicio del simulador
+
+//Acceder al DOM
+
+const conten= document.getElementsByTagName("conten");
+console.log(conten);
+
+//Creación de las tarjetas de promos
+
+const div1=document.createElement("div");
+div1.innerHTML= `<div>
+    <h3>${promocion1.nombre}</h3>
+    <p>Precio$ ${promocion1.precio}</p>
+    <img src="./imagenes/Copia de promoempanadas.jpeg" alt="promocion de 24 empanadas">
+</div>`
+
+document.body.append(div1);
+
+
+
+
+
+
+
+
+
+
+
+
+/*// Función para saludar e inicio del simulador
 
 function saludar (){
     alert ("Bienvenido a Ruta 11 - Casa de Comidas");
@@ -100,6 +129,9 @@ let ingreso1= prompt ("Hola " + (ingreso) + "! Ingresa 1 para elegir tu promo, o
     alert ("Gracias por elegirnos! Qué lo disfrutes");
     }
     
-        
+    */
    
+    console.log("hola mundo");
 
+   
+   
